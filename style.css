@@ -104,6 +104,7 @@ button{
     width: 180px;
     color: white;
     border: 0px;
+    font-weight:bolder  ;
 }
 a{
     color: #596D48;
@@ -114,16 +115,27 @@ input{
     border: 2px solid #E5E7EB;
     border-radius: 4px;
     height: 20px;
-    width: 200px;
+    width: 240px;
 }
 input:focus{
-    border: solid 3px blue;
-    /* box-shadow: 2px grey; */
+border: solid 4px blue;
+box-shadow: 2px grey; 
 }
-input:required:invalid{
-    border: 1px solid red;
+    
+form.invalid input:invalid{
+    border: 3px solid red ;
 }
 input,label{
     padding: 0;
     margin: 0;
+}
+input :focus{
+
+}
+input :not(:focus):invalid{
+    border: 2px solid red ;
+
+}
+input:valid{
+border: 4px solid green;
 }
