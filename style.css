@@ -70,6 +70,7 @@ form div{
 }
 .second-section{
     font-size: 10px;
+    height: max-content;
 }
 .first-section,
 .last-section{
@@ -79,7 +80,7 @@ form div{
     display: flex;
     flex-direction: column;
     font-size: 13px;
-    gap: 10px;
+    gap: 5px;
     
 }
 .sidebar>p{
@@ -142,3 +143,13 @@ input :not(:focus):invalid{
 input:valid{
 border: 4px solid green;
 }
+/* #confirm_paragraph{
+display: flex;
+flex-direction: column;
+height: 100px;
+} */
+/* #confirm{
+    position: relative;
+    right: 230px;
+    top: 523px;
+} */

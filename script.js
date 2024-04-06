@@ -28,3 +28,23 @@ alert("Success")
 //    }
    
 // })
+
+
+//CHECK IF PASSWORD MATCH
+const pwd=document.querySelector("#pwd")
+const confir=document.querySelector("#confirm_pwd")
+const warning=document.querySelector("#confirm")
+
+confir.addEventListener("input",()=>{
+   
+   if(pwd.value!==confir.value){
+      warning.textContent="Passwords do not match!!"
+      warning.style="color:red;"
+      confir.style.border=" 4px solid red"
+   }else{
+      warning.textContent=""
+      warning.style="color:black;"
+      confir.style.border=" 4px solid green"
+   }
+   
+})
