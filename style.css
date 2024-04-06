@@ -129,9 +129,7 @@ input,label{
     padding: 0;
     margin: 0;
 }
-input :focus{
 
-}
 input :not(:focus):invalid{
     border: 2px solid red ;
 
